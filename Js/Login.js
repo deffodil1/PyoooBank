@@ -1,8 +1,14 @@
-// console.log("hello Maulana Shaheb");
 document.getElementById('button-login').addEventListener('click', function(event){
     event.preventDefault();
-    console.log("Hello Maulana Shaheb");
-    // Get The user's phone number
+    // console.log("hello");
     const PhoneNumber = document.getElementById('phone-number').value;
-    console.log(PhoneNumber);
+    const PinNumber = document.getElementById('pin-number').value;
+    console.log(PhoneNumber, PinNumber);
+
+    if(PhoneNumber === '5' && PinNumber === '484440'){
+        console.log("You are logged in");
+    }else{
+        alert('Pin or Phone is incorrect');
+    }
+    
 })
