@@ -22,27 +22,43 @@
                 </div>
               </div>
               <div class="divider"></div>
+              <!-- User Action Section -->
               <div>
-                <button class="btn btn-lg">Add Money</button>
-                <button class="btn btn-lg">Cash Out</button>
+                <button id="btn-show-add-money" class="btn btn-lg">Add Money</button>
+                <button id="btn-show-cashout" class="btn btn-lg">Cash Out</button>
               </div>
               <div class="divider"></div>
               <!-- Add money form starts -->
-              <div class="card-body">
+              <div id="add-money-form" class="card-body">
                 <fieldset class="fieldset">
-                  <label class="label">Phone Number</label>
+                  <label class="label">Add Money</label>
                   <input id="input-add-money" type="number" class="input" placeholder="Enter your Phone number" style="color: black;" required />
                   <label class="label">Pin</label>
                   <input id="input-pin" type="password" class="input" placeholder="Pin Number" autocomplete="off" style="color: black;" required />
                   <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
-                  <button id="btn-add-money" class="btn btn-primary mt-4">Login</button>
+                  <button id="btn-add-money" class="btn btn-primary mt-4">Add Money</button>
                 </fieldset>
               </div>
                <!-- Add money form End -->
+                <!-- Cash Out Form starts -->
+                <div id="cashout-form" class="card-body hidden" >
+                    <fieldset class="fieldset">
+                      <label class="label">Cashout Amount</label>
+                      <input id="input-cahsout-money" type="number" class="input" placeholder="Enter your CashOut Amount" style="color: black;" required />
+                      <label class="label">Pin</label>
+                      <input id="input-cashout-pin" type="password" class="input" placeholder="Pin Number" autocomplete="off" style="color: black;" required />
+                      <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+                      <button id="btn-cashout-money" class="btn btn-primary mt-4">Cashout</button>
+                    </fieldset>
+                  </div>
+                  <!-- Cashout Form End -->
 
             </div>
           </div>
     </main>
-    <script src="Js/Home.js"></script>
+    <!-- <script src="Js/Home.js"></script> -->
+    <script src="/Js/AddMoney.js"></script>
+    <script src="Js/cashout.js"></script>
+    <script src="Js/Features.js"></script>
 </body>
 </html>
